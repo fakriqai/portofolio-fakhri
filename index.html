@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portofolio</title>
+    <!-- Style Library -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="nav-logo">Portofolio Fakhri </a>
+
+      <div class="nav-menu">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Saya</a>
+        <a href="#contact">Project</a>
+        <a href="#about">Kontak</a>
+      </div>
+
+      <div class="nav-plus">
+        <!-- <a href="#" id="search"> <i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a> -->
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Nabvar end -->
+
+    <!-- Hero Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h3>Halo Semua <span> saya</span></h3>
+        <h1>Muhamad Fakhri Qairawan</h1>
+        <p>GIS Analyst dan GIS Progammer</p>
+        <a href="#home" class="button">Hubungi Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero End -->
+    <!-- Section About -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image-profil">
+          <img src="img/profil-about.png" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Tentang Saya</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laudantium vitae provident numquam delectus odio? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Vel obcaecati veniam, dolorem dolorum soluta quas?
+          </p>
+
+          <div class="table-list">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('pengalaman')">Pengalaman</p>
+            <p class="tab-links" onclick="opentab('pendidikan')">Pendidikan</p>
+          </div>
+          <div class="table-contents active-content" id="skills">
+            <ul>
+              <li>
+                <span>GIS Analyst</span><br />
+                ArcGIS, ArcMap, Envi dan QGIS
+              </li>
+              <li>
+                <span>GIS Progammer</span><br />
+                Web GIS Development dan Mobile GIS Development
+              </li>
+            </ul>
+          </div>
+          <div class="table-contents" id="pengalaman">
+            <ul>
+              <li>
+                <span>Diroktorat Pleindungan Kebudayaan | Agust 2023 - Des 2023</span><br />
+                Asisten Pendata Objek Pemajuan Kebudayaan
+              </li>
+              <li>
+                <span>Badan Riset Inovasi dan Nasional | Feb 2023 - Jul 2023</span><br />
+                Research Intern sebagai GIS Progammer
+              </li>
+            </ul>
+          </div>
+          <div class="table-contents" id="pendidikan">
+            <ul>
+              <li>
+                <span>2020 - 2024</span><br />
+                DIV Sistem Informasi Geografis Universitas Gadjah Mada
+              </li>
+              <li>
+                <span>2023</span><br />
+                Peserta Bootcamp UI/UX Research di Harisenin.com
+              </li>
+              <li>
+                <span>2017 - 2020</span><br />
+                Siswa SMA N 3 Kota Tegal
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="javascript/script.js"></script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("table-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-content");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-content");
+      }
+    </script>
+  </body>
+</html>
