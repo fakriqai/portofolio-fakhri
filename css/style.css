@@ -257,7 +257,9 @@ body {
   display: none;
 }
 .daftar-portofolio.active-porto {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -348,6 +350,28 @@ body {
   font-weight: 200;
   margin-top: 10px;
   line-height: 1rem;
+}
+.load-more-container {
+  display: flex;
+  text-align: center;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.load-more-container button {
+  padding: 10px 20px;
+  justify-content: center;
+  font-size: 16px;
+  background-color: #9e7c1f;
+  border: none;
+  border-radius: 5px;
+  color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.load-more-container button:hover {
+  background-color: #d4ad44;
 }
 
 /* Kontak */
