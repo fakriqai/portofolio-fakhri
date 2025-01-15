@@ -93,7 +93,7 @@ body {
 }
 
 .hero .content h3 {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: #ffffff;
 }
 .hero .content h3 span {
@@ -332,15 +332,18 @@ body {
   color: #9e7c1f;
 }
 .porto-tags {
-  display: flex;
+  display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(3, minmax(30px, 1fr));
+  text-align: center;
+  align-items: center;
 }
 
 .porto-tags div {
   font-size: 0.6rem;
   border: 1px solid #2e2e2e;
   color: #d2d2d2;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 0.5rem;
   border-radius: 10px;
 }
 
@@ -450,6 +453,20 @@ form button {
 form button:hover {
   background: #d4ad44;
 }
+
+/* Footer */
+.footer {
+  background: #171717;
+}
+.footer p {
+  text-align: end;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 50px 20px;
+}
+
 /* Media Queries */
 
 /* Desktop */
@@ -499,19 +516,180 @@ form button:hover {
     transform: scaleX(0.2);
   }
 
+  /* Section Hero */
   .hero {
     padding: 1rem 4% 1.4rem;
+    margin: 0;
+    min-height: 60vh;
+  }
+  .hero .content {
+    padding: 1.4rem 4%;
+    max-width: 60rem;
   }
 
+  .hero h1 {
+    mix-blend-mode: difference;
+  }
+  .hero h3 {
+    font-size: 1.4rem;
+  }
+  /* Section about */
+
+  .about {
+    padding: 1rem 4% 1.4rem;
+  }
   .about .row {
-    flex-wrap: wrap;
+    display: grid;
     padding: 0 4% 1.4rem;
+    justify-items: center;
+  }
+
+  .about .row .content {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .about .row .content h3 {
+    font-size: 2.4;
+  }
+
+  .about .row .image-profil {
+    justify-content: center;
   }
 
   .about .row .image-profil img {
     flex-basis: 100%;
-    height: 30rem;
+    height: 20rem;
     object-fit: contain;
+    border-radius: 20px;
+  }
+  .about .row .content h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+  .about .row .content p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4;
+  }
+  .about .row .content .table-list {
+    display: flex;
+    margin: 10px 0 20px;
+  }
+
+  .about .row .content .table-contents ul li {
+    list-style: none;
+    margin: 10px 0px;
+    font-size: 1rem;
+    color: white;
+  }
+  .about .row .content .table-contents ul li span {
+    color: #9e7c1f;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+
+  .about .row .content .table-list .tab-links {
+    margin-right: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  /* Section Project */
+
+  .project h3 {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .project .row-portofolio h2 {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  .project {
+    padding: 1rem 4% 1.4rem;
+  }
+  .table-list-portofolio {
+    display: flex;
+    margin: 20px 0 40px;
+    justify-content: space-around;
+  }
+
+  .daftar-portofolio.active-porto {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cover-portofolio {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .portofolio-title h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #9e7c1f;
+  }
+  .porto-tags {
+    display: flex;
+    gap: 1rem;
+    /* grid-template-columns: repeat(3, minmax(30px, 1fr)); */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .porto-tags div {
+    padding: 5px 25px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+
+  .protofolio-row p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin-top: 10px;
+    line-height: 1.2rem;
+    text-align: start;
+  }
+
+  #loadMoreBtn {
+    font-size: 1.2rem;
+  }
+  #lessMoreBtn {
+    font-size: 1.2rem;
+  }
+
+  /* Kontak */
+  .kontak-row {
+    display: block;
+    padding: 1rem 4% 1.4rem;
+    margin-right: 40px;
+  }
+
+  .left-side-kontak,
+  .right-side-kontak {
+    flex-basis: 100%;
+  }
+  .right-side-kontak h3 {
+    font-size: 2.4rem;
+  }
+
+  .right-side-kontak p {
+    font-size: 1.4rem;
+  }
+
+  form button {
+    font-size: 16px;
+    padding: 12px;
   }
 }
 

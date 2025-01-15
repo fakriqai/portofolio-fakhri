@@ -26,8 +26,6 @@
         </div>
 
         <div class="nav-plus">
-          <!-- <a href="#" id="search"> <i data-feather="search"></i></a>
-          <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a> -->
           <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
       </div>
@@ -38,10 +36,12 @@
     <!-- Hero Start -->
     <section class="hero" id="home">
       <main class="content">
-        <h3>Halo Semua <span> saya</span></h3>
+        <!-- <h3>Halo Semua <span> saya</span></h3> -->
+        <h3>Halo <span id="name">Semua</span></h3>
+        <p>Selamat datang di website portofolio</p>
         <h1>Muhamad Fakhri Qairawan</h1>
-        <p>GIS Analyst dan GIS Progammer</p>
-        <a href="#home" class="button">Hubungi Sekarang</a>
+        <p>GIS Specialist</p>
+        <a href="#home" class="button">Download Resume</a>
       </main>
     </section>
     <!-- Hero End -->
@@ -50,7 +50,9 @@
     <section class="about" id="about">
       <div class="row">
         <div class="image-profil">
-          <img src="img/profil-about.png" alt="Tentang Kami" />
+          <img class="image-slide" src="img/profil-about.png" alt="Tentang Kami" />
+          <img class="image-slide" src="img/profil2.jpg" alt="Tentang Kami" />
+          <img class="image-slide" src="img/profil3.jpg" alt="Tentang Kami" />
         </div>
         <div class="content">
           <h3>Tentang Saya</h3>
@@ -60,9 +62,9 @@
           </p>
 
           <div class="table-list">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('pengalaman')">Pengalaman</p>
-            <p class="tab-links" onclick="opentab('pendidikan')">Pendidikan</p>
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'pengalaman')">Pengalaman</p>
+            <p class="tab-links" onclick="opentab(event, 'pendidikan')">Pendidikan</p>
           </div>
           <div class="table-contents active-content" id="skills">
             <ul>
@@ -114,8 +116,8 @@
       <h3>Project</h3>
       <div class="row-portofolio">
         <div class="table-list-portofolio">
-          <h2 class="tab-links-portofolio active-link-porto" onclick="openporto('porto-webs')">WebGIS Applications and Mobile GIS</h2>
-          <h2 class="tab-links-portofolio" onclick="openporto('porto-gis')">Visualisasi Data dan Peta Tematik</h2>
+          <h2 class="tab-links-portofolio active-link-porto" onclick="openporto(event, 'porto-webs')">WebGIS Applications and Mobile GIS</h2>
+          <h2 class="tab-links-portofolio" onclick="openporto(event, 'porto-gis')">Visualisasi Data dan Peta Tematik</h2>
         </div>
         <div class="daftar-portofolio active-porto" id="porto-webs">
           <div class="tab-contents-portofolio">
@@ -144,7 +146,7 @@
           <div class="tab-contents-portofolio">
             <div class="protofolio-row">
               <div class="cover-portofolio">
-                <img src="img/porto1.png" alt="Portofolio 1" />
+                <img src="img/porto2.png" alt="Portofolio 1" />
                 <div class="layer">
                   <a>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -153,7 +155,7 @@
               </div>
 
               <div class="portofolio-title">
-                <h3>Peta Story KCBN Muara Jambi</h3>
+                <h3>Website Edukasi Bahaya Merkuri</h3>
               </div>
               <div class="porto-tags">
                 <div>ArcMap</div>
@@ -167,7 +169,7 @@
           <div class="tab-contents-portofolio">
             <div class="protofolio-row">
               <div class="cover-portofolio">
-                <img src="img/porto1.png" alt="Portofolio 1" />
+                <img src="img/porto3.png" alt="Portofolio 1" />
                 <div class="layer">
                   <a>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -176,11 +178,12 @@
               </div>
 
               <div class="portofolio-title">
-                <h3>Peta Story KCBN Muara Jambi</h3>
+                <h3>Aplikasi Mobile Android TsunamiSafe</h3>
               </div>
               <div class="porto-tags">
-                <div>ArcMap</div>
-                <div>ArcGIS Online</div>
+                <div>React Native Js</div>
+                <div>Firebase</div>
+                <div>Map API</div>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
@@ -190,7 +193,7 @@
           <div class="tab-contents-portofolio">
             <div class="protofolio-row">
               <div class="cover-portofolio">
-                <img src="img/porto1.png" alt="Portofolio 1" />
+                <img src="img/porto4.png" alt="Portofolio 1" />
                 <div class="layer">
                   <a>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -199,11 +202,11 @@
               </div>
 
               <div class="portofolio-title">
-                <h3>Peta Story KCBN Muara Jambi</h3>
+                <h3>Design UI/UX Mobile Sistem Informasi Kebudayaan Jambi</h3>
               </div>
               <div class="porto-tags">
-                <div>ArcMap</div>
-                <div>ArcGIS Online</div>
+                <div>Miro</div>
+                <div>Figma</div>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
@@ -213,7 +216,7 @@
           <div class="tab-contents-portofolio">
             <div class="protofolio-row">
               <div class="cover-portofolio">
-                <img src="img/porto1.png" alt="Portofolio 1" />
+                <img src="img/porto5.png" alt="Portofolio 1" />
                 <div class="layer">
                   <a>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -222,11 +225,11 @@
               </div>
 
               <div class="portofolio-title">
-                <h3>Peta Story KCBN Muara Jambi</h3>
+                <h3>Dashborad: Child Abuse Case of Central Java Province in 2020</h3>
               </div>
               <div class="porto-tags">
-                <div>ArcMap</div>
-                <div>ArcGIS Online</div>
+                <div>Supermap</div>
+                <div>Ms. Excel</div>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
@@ -236,7 +239,7 @@
           <div class="tab-contents-portofolio">
             <div class="protofolio-row">
               <div class="cover-portofolio">
-                <img src="img/porto1.png" alt="Portofolio 1" />
+                <img src="img/porto6.png" alt="Portofolio 1" />
                 <div class="layer">
                   <a>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -245,11 +248,12 @@
               </div>
 
               <div class="portofolio-title">
-                <h3>Peta Story KCBN Muara Jambi</h3>
+                <h3>Web App: Peta Perubahan Lahan Kulon Progo</h3>
               </div>
               <div class="porto-tags">
                 <div>ArcMap</div>
                 <div>ArcGIS Online</div>
+                <div>Envi</div>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
@@ -262,7 +266,7 @@
           <div class="tab-contents-portofolio">
             <div class="protofolio-row">
               <div class="cover-portofolio">
-                <img src="img/porto1.png" alt="Portofolio 1" />
+                <img src="img/portogis1.jpg" alt="Portofolio 1" />
                 <div class="layer">
                   <a>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -271,11 +275,12 @@
               </div>
 
               <div class="portofolio-title">
-                <h3>Peta Story KCBN Muara Jambi</h3>
+                <h3>Peta Persebaran Kandungan Merkuri Kalurahan Kalirejo</h3>
               </div>
               <div class="porto-tags">
                 <div>ArcMap</div>
-                <div>ArcGIS Online</div>
+                <div>Ms. Excel</div>
+                <div>Mobile Topographer</div>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
@@ -285,7 +290,7 @@
           <div class="tab-contents-portofolio">
             <div class="protofolio-row">
               <div class="cover-portofolio">
-                <img src="img/porto1.png" alt="Portofolio 1" />
+                <img src="img/portogis2.png" alt="Portofolio 1" />
                 <div class="layer">
                   <a>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -294,11 +299,12 @@
               </div>
 
               <div class="portofolio-title">
-                <h3>Peta Story KCBN Muara Jambi</h3>
+                <h3>Peta Probalitas Kebakaran Hutan dan Lahan Pulau Kalimantan</h3>
               </div>
               <div class="porto-tags">
-                <div>ArcMap</div>
-                <div>ArcGIS Online</div>
+                <div>R Studio</div>
+                <div>Arcmap</div>
+                <div>R Studio</div>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
@@ -308,7 +314,7 @@
           <div class="tab-contents-portofolio">
             <div class="protofolio-row">
               <div class="cover-portofolio">
-                <img src="img/porto1.png" alt="Portofolio 1" />
+                <img src="img/portogis3.jpg" alt="Portofolio 1" />
                 <div class="layer">
                   <a>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -317,11 +323,10 @@
               </div>
 
               <div class="portofolio-title">
-                <h3>Peta Story KCBN Muara Jambi</h3>
+                <h3>Peta Tentative Penggunaan Lahan Sebagian Wilayah Semarang</h3>
               </div>
               <div class="porto-tags">
                 <div>ArcMap</div>
-                <div>ArcGIS Online</div>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
@@ -342,15 +347,6 @@
     <!-- Section Kontak -->
     <section id="kontak">
       <div class="kontak-row">
-        <div class="left-side-kontak">
-          <form>
-            <input type="text" name="Nama" placeholder="Masukan Nama Anda" required />
-            <input type="email" name="email" placeholder="Masukan Email Anda" required />
-            <textarea name="pesan" rows="6" placeholder="Masukan Pesan Anda"></textarea>
-
-            <button class="button-submit" type="submit">Kirim</button>
-          </form>
-        </div>
         <div class="right-side-kontak">
           <h3>Kontak</h3>
           <p><i class="fa-brands fa-whatsapp"></i> 082325100540</p>
@@ -362,8 +358,23 @@
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
+        <div class="left-side-kontak">
+          <form name="messages" onsubmit="return Validation()">
+            <input type="text" name="nama-form" placeholder="Masukan Nama Anda" />
+            <input type="email" name="email-form" placeholder="Masukan Email Anda" />
+            <textarea name="pesan-form" rows="6" placeholder="Masukan Pesan Anda"></textarea>
+
+            <button class="button-submit" type="submit" value="Submit">Kirim</button>
+          </form>
+        </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <p>Created By Fakhri</p>
+    </section>
+    <!-- End Secntion Kontak -->
     <!-- Feather Icons -->
     <script>
       feather.replace();
@@ -372,38 +383,27 @@
     <!-- Javascript -->
     <script src="javascript/script.js"></script>
     <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("table-contents");
+      var slideIndex = 1;
+      showDivs(slideIndex);
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-content");
-        }
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-content");
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
       }
-    </script>
+      function showDivs(n) {
+        var i;
+        var imglist = document.getElementsByClassName("image-slide");
+        if (n > imglist.length) slideIndex = 1;
+        else if (n < 1) slideIndex = imglist.length;
 
-    <script>
-      var tablinksporto = document.getElementsByClassName("tab-links-portofolio");
-      var tabcontentsporto = document.getElementsByClassName("daftar-portofolio");
-      function openporto(tabporto) {
-        for (tablinkporto of tablinksporto) {
-          tablinkporto.classList.remove("active-link-porto");
+        for (i = 0; i < imglist.length; i++) {
+          imglist[i].style.display = "none";
         }
-
-        for (tabcontentporto of tabcontentsporto) {
-          tabcontentporto.classList.remove("active-porto");
-        }
-
-        event.currentTarget.classList.add("active-link-porto");
-        document.getElementById(tabporto).classList.add("active-porto");
+        imglist[slideIndex - 1].style.display = "block";
       }
+
+      setInterval(() => {
+        plusDivs(1);
+      }, 2000);
     </script>
   </body>
 </html>
