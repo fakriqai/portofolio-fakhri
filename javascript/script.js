@@ -1,9 +1,9 @@
 // Script Get Name
-function replacename() {
-  let name = prompt("Halo, Selamat Datang. Siapakah nama Anda?", "");
-  document.getElementById("name").innerHTML = name;
-}
-replacename();
+// function replacename() {
+//   let name = prompt("Halo, Selamat Datang. Siapakah nama Anda?", "");
+//   document.getElementById("name").innerHTML = name;
+// }
+// replacename();
 
 // Toogle Navbar
 const navbarNav = document.querySelector(".nav-menu");

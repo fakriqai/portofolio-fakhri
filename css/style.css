@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: "center";
   padding: 1.5rem 7%;
-  background-color: rgba(0, 0, 0);
+  background-color: rgb(14, 13, 13);
   border-bottom: #ffff;
   position: fixed;
   top: 0;
@@ -85,7 +85,7 @@ body {
   background-image: url("../img/home-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: right;
 }
 .hero .content {
   padding: 1.4rem 7%;
@@ -132,6 +132,7 @@ body {
 .about .row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about .row .image-profil {
@@ -139,8 +140,9 @@ body {
 }
 
 .about .row .image-profil img {
-  width: 300px;
-  height: 100%;
+  width: 340px;
+  height: auto;
+  border-radius: 20px;
 }
 
 .about .row .content {
@@ -260,7 +262,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
   gap: 20px;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 
@@ -654,7 +656,7 @@ form button:hover {
 
   .protofolio-row p {
     color: #ffffff;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 200;
     margin-top: 10px;
     line-height: 1.2rem;
@@ -695,8 +697,15 @@ form button:hover {
 
 /* Mobile Phone */
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   html {
     font-size: 55%;
   }
+}
+
+#psn {
+  color: #2d9e23;
+  display: block;
+  margin-left: 20px;
+  font-size: 0.8rem;
 }
