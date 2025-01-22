@@ -1,1 +1,1 @@
-fakhri.portofolio.com
+fakhriqai.portofolio.com
